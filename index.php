@@ -1,8 +1,8 @@
 <?php
 /*
 Plugin Name: iPhone theme switch
-Plugin URI: http://www.jonasvorwerk.com/
-Description: This plugin detects if your site is being viewed by iPhone (or iPod) and switches to an iPhone / iPod  theme. iUI theme included.
+Plugin URI: http://wordpress.org/extend/plugins/iphone-theme-switch/
+Description: This plugin detects if your site is being viewed by iPhone (or iPod) and switches to an iPhone / iPod  theme. iUI theme available on http://www.jonasvorwerk.com/
 Version: 0.1
 Author: Jonas Vorwerk
 Author URI: http://www.jonasvorwerk.com/
