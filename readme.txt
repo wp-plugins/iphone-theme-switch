@@ -1,9 +1,8 @@
 === iPhone theme switcher ===
 Contributors: Jonas Vorwerk
-Donate link: http://www.jonasvorwerk.com
 Tags: theme, template, iPhone
 Requires at least: 2.7
-Tested up to: 2.8.3
+Tested up to: 2.8.4
 Stable tag: 0.1
 
 == Description ==
@@ -17,9 +16,15 @@ This plugin detects if your site is being viewed by iPhone (or iPod) and switche
 
 == Frequently Asked Questions ==
 
+= What's visible on the iPhone? =
+Your pages and a page to your posts. 
+
 = Where are my posts? =
 If you have selected a page for your posts, for example 'News' in the 'readers' settings panel: A Static page: posts page: 'News' your posts will be under the 'News' button.
 If you don't have a special page for your blog or home a button will be created called 'home'
+
+= What's iUI? =
+iUI: iPhone User Interface Framework, read more here: http://code.google.com/p/iui/
 
 == Screenshots ==
 1. screenshot-1.jpg
