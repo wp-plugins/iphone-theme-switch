@@ -28,7 +28,7 @@ If you don't have a special page for your blog or home a button will be created 
 == Changelog ==
 
 = 0.2 = 
-* removing theme options, these options belong to the theme and not this plugin. 
+* removing theme options, these options belong to the theme and not in this plugin.
 
 = 0.1 =
 * release of the plugin	
