@@ -8,7 +8,7 @@ Stable tag: 0.2
 
 
 == Description ==
-This plugin detects if your site is being viewed by iPhone (or iPod) and switches to an iPhone / iPod  theme. iUI iPhone theme included.
+This plugin detects if your site is being viewed by iPhone (or iPod) and switches to an iPhone / iPod  theme. You can get the iUI theme from my website. 
 
 == Installation ==
 1. Upload `plugin-name.php` to the `/wp-content/plugins/` folder
