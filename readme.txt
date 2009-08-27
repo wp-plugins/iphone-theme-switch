@@ -3,7 +3,7 @@ Contributors: Jonas Vorwerk
 Donate link: http://www.jonasvorwerk.com
 Tags: theme, template, iPhone
 Requires at least: 2.7
-Tested up to: 2.8.3
+Tested up to: 2.8.4
 Stable tag: 0.2
 
 
