@@ -22,6 +22,7 @@ if($_POST['form_hidden'] == 'Y') {
 
 <div class="wrap">
 	<?php    echo "<h2>" . __( 'iPhone theme switch', 'jv_mobiletheme' ) . "</h2>"; ?>
+	<br />
 	<!-- <h4>Theme for iPhone</h4> -->
 	<form name="mobiletheme_form" method="post" action="<?php echo str_replace( '%7E', '~', $_SERVER['REQUEST_URI']); ?>">
 <?php
@@ -44,7 +45,8 @@ if($_POST['form_hidden'] == 'Y') {
   echo $html;
   
    ?>
-		<!--<input type="hidden" name="form_hidden" value="Y">
+		<input type="hidden" name="form_hidden" value="Y">
+		<!--
 		<h4>Optional options</h4>
 		<p>get_pages arguments: <input type="text" name="pages_arg" value="<?php echo $pages_arg; ?>" size="20"> <i>for example: exclude=9&sort_column=menu_order <a href="http://codex.wordpress.org/Function_Reference/get_pages" target="_blank">get_pages reference</a></i> </p>
 		<p>get_posts arguments: <input type="text" name="posts_arg" value="<?php echo $posts_arg; ?>" size="20"> <i>for example: cat=4&orderby=date&numberposts=10 <a href="http://codex.wordpress.org/Template_Tags/get_posts" target="_blank">get_posts reference</a></i></p>-->
