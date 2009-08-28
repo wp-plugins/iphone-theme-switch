@@ -6,7 +6,6 @@ Requires at least: 2.7
 Tested up to: 2.8.4
 Stable tag: 0.2
 
-
 == Description ==
 This plugin detects if your site is being viewed by iPhone (or iPod) and switches to an iPhone / iPod  theme. You can get the iUI theme from my website. 
 
