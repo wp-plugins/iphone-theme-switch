@@ -2,8 +2,8 @@
 /*
 Plugin Name: iPhone theme switch
 Plugin URI: http://wordpress.org/extend/plugins/iphone-theme-switch/
-Description: This plugin detects if your site is being viewed by iPhone (or iPod) and switches to an iPhone / iPod  theme. You can get the iUI theme from my website. 
-Version: 0.2.1
+Description: This plugin detects if your site is being viewed by iPhone (or iPod) and switches to an selected iPhone theme.
+Version: 0.3
 Author: Jonas Vorwerk
 Author URI: http://www.jonasvorwerk.com/
 */
@@ -24,14 +24,16 @@ function getTemplateStyle(){
 	}	
 }
 
-function admin_actions() { 
-	add_options_page("iPhone theme switch", "iPhone theme switch", 1, "iPhone theme switch", "show_admin");
+function its_admin_actions() { 
+	if (current_user_can('activate_plugins')) { 
+		add_options_page("iPhone theme switch", "iPhone theme switch", 1, "iPhone theme switch", "its_show_admin");
+	}
 } 
 
-function show_admin(){
+function its_show_admin(){
 	include('iphone_admin.php'); 
 }
 
-add_action('admin_menu', 'admin_actions'); 
+add_action('admin_menu', 'its_admin_actions'); 
 
 ?>
