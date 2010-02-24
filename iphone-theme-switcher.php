@@ -26,7 +26,7 @@ function getTemplateStyle(){
 
 function its_admin_actions() { 
 	if (current_user_can('activate_plugins')) { 
-		add_options_page("iPhone theme switcher", "iPhone theme switcher", 1, "iPhone theme switcher", "its_show_admin");
+		add_theme_page("iPhone theme switcher", "iPhone theme switcher", 1, "iPhone theme switcher", "its_show_admin");
 	}
 } 
 
