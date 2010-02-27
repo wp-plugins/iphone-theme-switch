@@ -7,7 +7,7 @@ if($_POST['form_hidden'] == 'Y') {
 	<div class="updated"><p><strong><?php _e('Options saved.' ); ?></strong></p></div>
 	<?php
 } else {
-	$mobiletheme = get_option('iphonetheme');
+	$iphonetheme = get_option('iphonetheme');
 }	
 ?>
 
