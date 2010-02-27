@@ -3,7 +3,7 @@
 Plugin Name: iPhone theme switcher
 Plugin URI: http://wordpress.org/extend/plugins/iphone-theme-switch/
 Description: This plugin detects if your site is being viewed by iPhone (or iPod) and switches to an selected iPhone theme.
-Version: 0.4
+Version: 0.41
 Author: Jonas Vorwerk
 Author URI: http://www.jonasvorwerk.com/
 */
@@ -14,9 +14,8 @@ if (strpos($_SERVER['HTTP_USER_AGENT'], 'iPhone') !== FALSE || strpos($_SERVER['
 } 
 
 function getTemplateStyle(){
-	$iphonetheme =  get_option('$iphonetheme');
+	$iphonetheme =  get_option('iphonetheme');
     $themes = get_themes();
-      
 	foreach ($themes as $theme_data) {
 	  if ($theme_data['Name'] == $iphonetheme) {
 	      return $theme_data['Stylesheet'];
