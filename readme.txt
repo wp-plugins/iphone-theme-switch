@@ -20,7 +20,7 @@ This plugin detects if your site is being viewed by iPhone (or iPod) and switche
 == Changelog ==
 
 = 0.41 =
-* Typo
+* Typo fix
 
 = 0.4 =
 * Some small improvements
