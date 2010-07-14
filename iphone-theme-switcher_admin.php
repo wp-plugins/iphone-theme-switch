@@ -40,6 +40,6 @@ if($_POST['form_hidden'] == 'Y') {
 		<input type="submit" name="Submit" value="<?php _e('Update Options', 'jv_mobiletheme' ) ?>" />
 		</p>
 	
-		<p><a href="http://www.jonasvorwerk.com" target="_blank"><img src="http://www.jonasvorwerk.com/wp-content/themes/JonasVorwerk/logo_white/rotate.php" alt="Jonas Vorwerk" title="http://www.jonasvorwerk.com" width="25"></a></p>
+		<p><a href="http://www.jonasvorwerk.com" target="_blank"><img src="http://www.jonasvorwerk.com/wp-content/themes/JonasVorwerk/32x32/rotate.php" alt="Jonas Vorwerk" title="http://www.jonasvorwerk.com" width="25"></a></p>
 	</form>
 </div>

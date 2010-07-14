@@ -1,9 +1,9 @@
 === iPhone theme switcher ===
 Contributors: Jonas Vorwerk
-Tags: theme, template, iPhone
+Tags: theme, template, iPhone, switch
 Requires at least: 2.7
-Tested up to: 2.9.2
-Stable tag: 0.41
+Tested up to: 3.0
+Stable tag: 0.5
 
 == Description ==
 This plugin detects if your site is being viewed by iPhone (or iPod) and switches to an, by admin selectable, iPhone theme.
@@ -11,13 +11,17 @@ This plugin detects if your site is being viewed by iPhone (or iPod) and switche
 == Installation ==
 1. Upload `plugin-name.php` to the `/wp-content/plugins/` folder
 2. Upload an iPhone theme to the '/wp-content/themes/' folder
-3. Activate the plugin through the 'Appearance' menu in WordPress
+3. Activate the plugin
+4. Open the "iPhone theme switcher" options page under the 'Appearance' menu in WordPress.
 4. Select an iPhone compatible Wordpress theme
 
 == Screenshots ==
 1. screenshot-1.png
 
 == Changelog ==
+
+= 0.5 =
+* Get rid of the message "You do not have sufficient permissions to access this page." in WP3.0
 
 = 0.41 =
 * Typo fix

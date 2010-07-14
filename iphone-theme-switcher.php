@@ -24,8 +24,10 @@ function getTemplateStyle(){
 }
 
 function its_admin_actions() { 
-	if (current_user_can('activate_plugins')) { 
-		add_theme_page("iPhone theme switcher", "iPhone theme switcher", 1, "iPhone theme switcher", "its_show_admin");
+	if (!current_user_can('manage_options'))  {
+    	wp_die( __('You do not have sufficient permissions to access this page.') );
+	} else {
+		add_theme_page("iPhone theme switcher", "iPhone theme switcher", 'manage_options', "iPhone-theme-switcher", "its_show_admin");
 	}
 } 
 
