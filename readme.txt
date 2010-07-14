@@ -3,7 +3,7 @@ Contributors: Jonas Vorwerk
 Tags: theme, template, iPhone, switch
 Requires at least: 2.7
 Tested up to: 3.0
-Stable tag: 0.5
+Stable tag: 0.51
 
 == Description ==
 This plugin detects if your site is being viewed by iPhone (or iPod) and switches to an, by admin selectable, iPhone theme.
