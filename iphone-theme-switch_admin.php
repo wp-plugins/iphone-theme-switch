@@ -12,7 +12,7 @@ if($_POST['form_hidden'] == 'Y') {
 ?>
 
 <div class="wrap">
-	<?php    echo "<h2>" . __( 'iPhone theme switcher', 'jv_mobiletheme' ) . "</h2>"; ?>
+	<?php    echo "<h2>" . __( 'iPhone theme switch', 'jv_mobiletheme' ) . "</h2>"; ?>
 	<br />
 	<form name="mobiletheme_form" method="post" action="<?php echo str_replace( '%7E', '~', $_SERVER['REQUEST_URI']); ?>">
 <?php

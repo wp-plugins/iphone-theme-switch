@@ -1,14 +1,21 @@
 <?php
 /*
-Plugin Name: iPhone theme switcher
+Plugin Name: iPhone theme switch
 Plugin URI: http://wordpress.org/extend/plugins/iphone-theme-switch/
 Description: This plugin detects if your site is being viewed by iPhone (or iPod) and switches to an selected iPhone theme.
-Version: 0.51
+Version: 0.54
 Author: Jonas Vorwerk
 Author URI: http://www.jonasvorwerk.com/
 */
+session_start();
 
-if (strpos($_SERVER['HTTP_USER_AGENT'], 'iPhone') !== FALSE || strpos($_SERVER['HTTP_USER_AGENT'], 'iPod') !== FALSE){ 
+if($_GET['mobile'] == "off"){
+	$_SESSION[$JVmobile] = "off"; 
+} else if($_GET['mobile'] == "on"){
+	unset( $_SESSION[$JVmobile] ); 
+}
+
+if ((strpos($_SERVER['HTTP_USER_AGENT'], 'iPhone') || strpos($_SERVER['HTTP_USER_AGENT'], 'iPod')) &&  !isset($_SESSION[$sessVar]) ){ 
 	add_filter('stylesheet', 'getTemplateStyle');
 	add_filter('template', 'getTemplateStyle');
 } 
@@ -24,15 +31,13 @@ function getTemplateStyle(){
 }
 
 function its_admin_actions() { 
-	if (!current_user_can('manage_options'))  {
-    	wp_die( __('You do not have sufficient permissions to access this page.') );
-	} else {
-		add_theme_page("iPhone theme switcher", "iPhone theme switcher", 'manage_options', "iPhone-theme-switcher", "its_show_admin");
+	if (current_user_can('manage_options'))  {
+		add_theme_page("iPhone theme switch", "iPhone theme switch", 'manage_options', "iPhone-theme-switch", "its_show_admin");
 	}
 } 
 
 function its_show_admin(){
-	include('iphone-theme-switcher_admin.php'); 
+	include('iphone-theme-switch_admin.php'); 
 }
 
 add_action('admin_menu', 'its_admin_actions'); 
