@@ -2,8 +2,12 @@
 /*
 Plugin Name: iPhone theme switch
 Plugin URI: http://wordpress.org/extend/plugins/iphone-theme-switch/
-Description: This plugin detects if your site is being viewed by iPhone (or iPod) and switches to an selected iPhone theme.
-Version: 0.54
+Description: 
+This plugin detects if your site is being viewed by iPhone (or iPod) and switches to an selected iPhone theme.
+THIS WILL BE THE LAST REVISION OF THIS PLUGIN
+USE THE "MOBILE THEME SWITCH" plugin instead:
+http://wordpress.org/extend/plugins/mobile-theme-switcher/
+Version: 0.55
 Author: Jonas Vorwerk
 Author URI: http://www.jonasvorwerk.com/
 */
@@ -17,11 +21,13 @@ if($_GET['mobile'] == "off"){
 }
 
 $iphone = strpos($_SERVER['HTTP_USER_AGENT'],"iPhone");
+$ipod = strpos($_SERVER['HTTP_USER_AGENT'],"iPod");
+/*
 $android = strpos($_SERVER['HTTP_USER_AGENT'],"Android");
 $palmpre = strpos($_SERVER['HTTP_USER_AGENT'],"webOS");
 $berry = strpos($_SERVER['HTTP_USER_AGENT'],"BlackBerry");
-$ipod = strpos($_SERVER['HTTP_USER_AGENT'],"iPod");
 $iemobile = strpos($_SERVER['HTTP_USER_AGENT'],"iemobile");
+*/
 
 if (($iphone || $android || $palmpre || $ipod || $berry || $iemobile == true) || $_SESSION[$JVmobile] == "on") { 
 	add_filter('stylesheet', 'getTemplateStyle');
