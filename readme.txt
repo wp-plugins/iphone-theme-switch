@@ -2,11 +2,16 @@
 Contributors: Jonas Vorwerk
 Tags: theme, template, iPhone, switch
 Requires at least: 2.7
-Tested up to: 3.1
-Stable tag: 0.54
+Tested up to: 3.3.1
+Stable tag: 0.55
 
 == Description ==
 This plugin detects if your site is being viewed by iPhone (or iPod) and switches to an, by admin selectable, iPhone theme.
+
+THIS WILL BE THE LAST REVISION OF THIS PLUGIN
+USE THE "MOBILE THEME SWITCH" plugin instead:
+http://wordpress.org/extend/plugins/mobile-theme-switcher/
+
 New: 
 Mobile on/off switch so users can also go to the normal theme. Just add the following links in your theme.
 myurl.com/?mobile=off

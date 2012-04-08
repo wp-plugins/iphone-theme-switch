@@ -11,11 +11,19 @@ session_start();
 
 if($_GET['mobile'] == "off"){
 	$_SESSION[$JVmobile] = "off"; 
-} else if($_GET['mobile'] == "on"){
 	unset( $_SESSION[$JVmobile] ); 
+} else if($_GET['mobile'] == "on"){
+	$_SESSION[$JVmobile] = "on";
 }
 
-if ((strpos($_SERVER['HTTP_USER_AGENT'], 'iPhone') || strpos($_SERVER['HTTP_USER_AGENT'], 'iPod')) &&  !isset($_SESSION[$sessVar]) ){ 
+$iphone = strpos($_SERVER['HTTP_USER_AGENT'],"iPhone");
+$android = strpos($_SERVER['HTTP_USER_AGENT'],"Android");
+$palmpre = strpos($_SERVER['HTTP_USER_AGENT'],"webOS");
+$berry = strpos($_SERVER['HTTP_USER_AGENT'],"BlackBerry");
+$ipod = strpos($_SERVER['HTTP_USER_AGENT'],"iPod");
+$iemobile = strpos($_SERVER['HTTP_USER_AGENT'],"iemobile");
+
+if (($iphone || $android || $palmpre || $ipod || $berry || $iemobile == true) || $_SESSION[$JVmobile] == "on") { 
 	add_filter('stylesheet', 'getTemplateStyle');
 	add_filter('template', 'getTemplateStyle');
 } 
