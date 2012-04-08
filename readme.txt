@@ -16,7 +16,7 @@ http://wordpress.org/extend/plugins/mobile-theme-switcher/
 2. Upload an iPhone theme to the '/wp-content/themes/' folder
 3. Activate the plugin
 4. Open the "iPhone theme switch" options page under the 'Appearance' menu in WordPress.
-4. Select an iPhone compatible Wordpress theme
+5. Select an iPhone compatible Wordpress theme
 
 == Screenshots ==
 1. screenshot-1.png
@@ -24,7 +24,7 @@ http://wordpress.org/extend/plugins/mobile-theme-switcher/
 == Changelog ==
 
 = 0.55 =
-* the end
+* last version of this plugin
 
 = 0.54 =
 * Mobile on/off switch so users can also go to the normal theme. 
