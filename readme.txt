@@ -29,6 +29,9 @@ myurl.com/?mobile=on
 
 == Changelog ==
 
+= 0.55 =
+* the end
+
 = 0.54 =
 * Mobile on/off switch so users can also go to the normal theme. 
 myurl.com/?mobile=off
