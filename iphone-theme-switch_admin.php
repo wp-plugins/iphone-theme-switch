@@ -19,7 +19,7 @@ if($_POST['form_hidden'] == 'Y') {
   $themes = get_themes();
   $default_theme = get_current_theme();
   
-  if (count($themes) > 1) {
+  if (count($themes) >= 1) {
       $theme_names = array_keys($themes);
       natcasesort($theme_names); 
       $html = 'iPhone theme: <select name="iphonetheme">' . "\n";
